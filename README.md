@@ -1,3 +1,8 @@
+
+## Live Link for the API:
+
+[Click here](https://stack-overflow-2312.onrender.com)
+
 # Stack Overflow Express Server
 
 This server is a Express Application and made to provide API support to Stack Overflow Clone.
@@ -28,11 +33,5 @@ npm install
 ```
 npm start
 ```
-
-## Live Link for the API:
-
-[Click here](https://stack-overflow-2312.onrender.com)
-
-
 
 Made by [@Himanshu](https://www.linkedin.com/in/himanshu2312/)
