@@ -1,6 +1,5 @@
 import mongoose from "mongoose"
 import Users from "../models/auth.js"
-import fs from 'fs'
 
 export const getAllUsers=async(req,res)=>{
       try{
@@ -32,17 +31,22 @@ export const updateUser=async(req,res)=>{
 }
 
 export const updateUserImage=async(req,res)=>{
+      console.log("inside controller")
       const {id:_id} = req.params;
-      const {image}=req.body;
-      // const imageData = fs.readFile(image);
-      // console.log(imageData)
+      console.log("userId:",_id);
+      console.log(req.body.image);
+      // const {image}=req.body;
+      // console.log("data got from req is:",image)
+      // console.log("imageName:",image.name)
+      // console.log("imageData:",image.arrayBuffer)
+      // console.log("imageType:",image.type)
+
       if(!mongoose.Types.ObjectId.isValid(_id)){
             res.status(404).json({message:"User not found"})
       }
       try{
-            // heare is the error 
-            const updatedUser= await Users.findByIdAndUpdate(_id,{ $set : {'profileImage': {name:image.name,data:imageData,contentType:"image/jpeg"}}});
-            res.status(200).json(updatedUser)
+            // const updatedUser= await Users.findByIdAndUpdate(_id,{ $addToSet : {'profileImage': {name:image.name,data:image.arrayBuffer,contentType:image.type}}});
+            // res.status(200).json(updatedUser)
       }
       catch(e){
             res.status(405).json({message:"Profile not updated, try again!!"})
