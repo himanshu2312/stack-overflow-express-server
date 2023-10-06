@@ -10,6 +10,6 @@ router.post('/signup', signup)
 router.post('/login', login)
 router.get('/get',getAllUsers)
 router.patch('/update/:id', auth , updateUser)
-router.patch('/profileImage/:id', auth, updateUserImage)
+router.patch('/profileImage', auth, updateUserImage)
 
 export default router;

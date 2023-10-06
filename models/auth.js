@@ -6,11 +6,7 @@ const userSchema = mongoose.Schema({
   about: { type: String, default: "" },
   tags: { type: [String] },
   joinedOn: { type: Date, default: Date.now },
-  profileImage: {
-    name: String,
-    data: Buffer,
-    contentType: String
-  },
+  profileImage: { type: String}
 });
 
 export default mongoose.model("Users", userSchema);
