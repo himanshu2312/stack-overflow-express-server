@@ -4,12 +4,13 @@
 # Stack Overflow Express Server
 This server is an Express Application and is built to provide API support to Stack Overflow Clone.
 
-## Technologies used:
+## Technologies and Tools used:
 - React js
 - Node js
 - Express js
 - MongoDB
 - Redux
+- Visual Studio Code
 - JSON web token and more
 
 ## How to use?
