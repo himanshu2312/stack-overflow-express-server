@@ -5,12 +5,11 @@
 This server is an Express Application and is built to provide API support to Stack Overflow Clone.
 
 ## Technologies and Tools used:
-- React js
 - Node js
 - Express js
 - MongoDB
-- Redux
 - Visual Studio Code
+- Thunderclient (VsCode Extension)
 - JSON web token and more
 
 ## How to use?
